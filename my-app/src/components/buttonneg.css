@@ -1,0 +1,25 @@
+.outer-button-neg{
+    width:65px;
+    height:65px;
+    border-radius: 50%;
+    background-color: rgb(255, 112, 112);
+    position: absolute;
+    right:0;
+    bottom:0;
+    margin-bottom:80px;
+    margin-right:100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s;
+}
+.outer-button-neg:hover{
+    transform: scale(1.1);
+    color:green;
+}
+.icon-down-neg{
+color:white;
+width:30px;
+height:30px;
+font-size:large;
+}

@@ -1,0 +1,224 @@
+.App2{
+    font-family: 'Raleway',sans-serif;
+    display: flex;
+    text-align:center;
+    background-color: #282c34;
+    color:white;
+    position:absolute;
+    top:0;bottom:0;left:0;right:0;
+    transition:all 0.2s;
+}
+.half {
+    opacity: 0.8;
+}
+.sidemenu{
+    width:260px;
+    padding: 10px;
+    background-color: #202123;
+}
+.side-menu-button{
+    padding:12px; 
+    border:1px solid white;
+    border-radius: 5px;
+    display:flex;
+    align-items: center;
+    gap:10px;
+    transition: ease 0.25s all;
+    margin-bottom: 20px;
+}
+.side-menu-button:hover{
+    background-color: rgb(255,255,255,0.1);
+}
+.side-menu-span{
+    padding-left: 6px;
+    padding-right: 12px;
+}
+.chat-box{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    background-color: #343541;
+    position:relative;
+}
+.chat-input-holder{
+  padding:24px;
+  position:absolute;
+  bottom:0;left:0;right:0;
+  width:95%;
+  @media(max-width:768px)
+  {
+    padding:12px;
+    width:92%;
+    margin-top:10px;
+  }
+}
+.chat-input-textarea{
+    background-color: #40414f;
+    width:90%;
+    padding:12px;
+    color:white;
+    width:100%;
+    font-size:1.25en;
+    border-radius: 5px;
+    resize:none;
+    border: none;
+    outline:none;
+    box-shadow:0 0 8px 0 rgb(0,0,0,0.25);
+    @media(max-width:768px)
+    {
+        width:85%;
+    }
+
+}
+.chat-log{
+   height:90vh;
+   text-align: left;
+   overflow-y: auto;
+   @media(max-width: 768px)
+   {
+       height:85vh;
+   }
+}
+.chat-message-center{
+    display: flex;
+    align-items: center;
+    gap:20px;
+    /* justify-content: center; */
+    padding:12px;
+   padding-left:24px;
+   padding-right:24px;
+   @media(max-width:768px)
+   {
+    font-size:0.8rem;
+   }
+}
+.chat-message.chatgpt{
+    background-color: rgb(255,255,255,0.1);
+}
+.avatar{
+    flex-shrink: 0;
+   border-radius:50%;
+   width:40px;
+   height:40px;
+}
+.avatar.chatgpt{
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#0da37f;
+    border-radius:50%;
+    width:40px;
+    height:40px;
+}
+.chat-log::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+.chat-log::-webkit-scrollbar-thumb {
+    background-color: #555;
+    border-radius: 10px;
+  }
+
+.chat-log::-webkit-scrollbar-thumb:hover {
+    background-color: #888; /* Change the color on hover */
+  }
+/* .chat-log::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+  } */
+.user-img{
+    flex-shrink: 0;
+   border-radius:50%;
+   width:40px;
+   height:40px;
+    z-index:2;
+}
+.three{
+    padding-left:24px;
+    width:40px;
+}
+.link{
+    text-decoration: none;
+    color:white;
+}
+.notes{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    font-size:1.4rem;
+    font-weight: 600;
+}
+.note-area{
+    resize:none;
+    height: 400px;
+    border-radius: 5px;
+    background-color: rgb(55, 55, 55);
+    color:aliceblue;
+    padding:5px;
+}
+.note-area::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+.note-area::-webkit-scrollbar-thumb {
+    background-color: hsl(244, 100%, 94%);
+    border-radius: 10px;
+  }
+
+.note-area::-webkit-scrollbar-thumb:hover {
+    background-color: hsl(251, 100%, 78%); /* Change the color on hover */
+  }
+.outer{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition:all 0.2s;
+}
+.show{
+    border: 2px solid transparent; /* Set border to transparent initially */
+    border-radius: 5px; /* Adjust border radius as needed */
+    box-shadow: 0 0 20px 0 rgb(255, 46, 46); /* Red glowing border */
+    opacity:1;
+    z-index:100;
+    background-color: rgb(222, 239, 253);
+    color:black;
+    font-size:1.3rem;
+    font-family: 'Raleway',sans-serif;
+    font-weight:600;
+    height:fit-content;
+    padding:25px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:15px;
+    transition:all 0.1s;
+}
+.hide{
+    opacity:0;
+    z-index:100;
+    background-color: red;
+    color:black;
+}
+.alert{
+    color:red;
+    width:50px !important;
+    height: 50px !important;
+}
+.alertbut{
+    border:3px solid gray;
+    border-radius:5px;
+    background-color: rgb(250, 74, 74);
+    color:rgb(45, 45, 45);
+    padding:10px 20px;
+    font-size:0.9rem;
+    font-weight:600;
+    transition: transform 0.2s;
+}
+.alertbut:hover{
+    background-color:rgb(98, 195, 98);
+    transform:scale(1.05);
+}
