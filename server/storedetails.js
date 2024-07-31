@@ -9,8 +9,8 @@ app.use(bodyParser.json());
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0"; // Disable SSL certificate validation for the emulator
 // Initialize CosmosClient
 const client = new CosmosClient({
-  endpoint: process.env.COSMOS_ENDPOINT || "https://localhost:8081",
-  key: process.env.COSMOS_KEY || "C2y6yDjf5/R+ob0N8A7Cgv30VRDJIWEHLM+4QDU5DE2nQ9nDuVTqobD4b8mGGyPMbIZnqyMsEcaGQy67XIw/Jw=="
+  endpoint: process.env.COSMOS_ENDPOINT,
+  key: process.env.COSMOS_KEY
 });
 async function setupDatabase() {
   // Check if the database exists, and create it if not
